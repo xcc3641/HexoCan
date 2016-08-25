@@ -5,7 +5,7 @@ ADD ./rootfs.tar /
 RUN mkdir -p /app
 WORKDIR /app
 COPY ./static /app/
-RUN git clone git@github.com:xcc3641/hexo_blog.git /blog
+RUN git clone git@github.com:xcc3641/hexo_blog.git /public
 EXPOSE 8080
 
 CMD ["/app/static"]
